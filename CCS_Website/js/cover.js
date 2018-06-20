@@ -6,6 +6,9 @@ $(document).ready(function() {
 
     $('#b_1').click(function(){
 
+      /* Page No Background */
+      setTimeout(function(){ $('#page_no').css('background-color','#000'); }, 1000);
+
       /* Active Button */
       $('.btn').removeClass('nav_active');
       $(this).addClass('nav_active');
@@ -25,6 +28,9 @@ $(document).ready(function() {
 
     $('#b_2').click(function(){
 
+       /* Page No Background */
+       setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
+
       /* Active Button */
       $('.btn').removeClass('nav_active');
       $(this).addClass('nav_active');
@@ -43,6 +49,10 @@ $(document).ready(function() {
     });
 
     $('#b_3').click(function(){
+
+      /* Page No Background */
+      
+      setTimeout(function(){ $('#page_no').css('background-color','#485f80'); }, 1000);
 
       /* Active Button */
       $('.btn').removeClass('nav_active');

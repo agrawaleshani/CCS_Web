@@ -129,6 +129,7 @@
   overflow: hidden;
   font-family: 'Righteous', cursive;
   font-size: 2vh;
+  transition: background-color 1s ease-in;
 }
 
 /* Msg_Icon*/
