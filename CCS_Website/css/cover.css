@@ -18,6 +18,7 @@
 
 #logo{
   position: fixed;
+  color: red;
   top:28%;
   left:39%;
   max-width: 20%;
