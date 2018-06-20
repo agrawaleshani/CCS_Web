@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.container{
+  margin:0;
+  padding:0;
+  height:100%;
+  width: 100%;
+  position: relative;
+}
+
+.sec{
+  position: absolute;
+  height:100%;
+  width:100%;
+  transition: left 1s ease-in;
+  display: block
+}
+
+.page{
+  position: relative;
+  height:100%;
+  display: block;
+}
+
+/* About Section */
+.about{
+  background-color: #f3f5e2;
+  left: 0;
+  z-index: 1
+}
+
+
+/* Events Section */
+.events{
+  background-color: #c9d27d;
+  left: 100%;
+  z-index: 1;
+}
+
+/* Team Section */
+.team{
+  background-color: #e9ecc9;
+  left: 200%;
+  z-index: 1;
+}
