@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var i = 0,j=0;
+
   /* Active Button */
 
     $('#b_1').addClass('nav_active');
@@ -28,6 +30,24 @@ $(document).ready(function() {
 
     $('#b_2').click(function(){
 
+      /* Typewriter */
+
+
+        var txt = '< Events >';
+        var speed = 500;
+      
+        function typeWriter() {
+          
+          if (i < txt.length) {
+            document.getElementById('ab_b_span').innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 80);
+          }
+        }
+        setTimeout(function(){
+          typeWriter();
+        },1500);
+       
        /* Page No Background */
        setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
 
@@ -50,8 +70,25 @@ $(document).ready(function() {
 
     $('#b_3').click(function(){
 
+      /* Typewriter */
+
+
+      var txt = '< Team of Professionals >';
+      var speed = 500;
+    
+      function typeWriter2() {
+        
+        if (j < txt.length) {
+          document.getElementById('tm_b_span').innerHTML += txt.charAt(j);
+          j++;
+          setTimeout(typeWriter2, 80);
+        }
+      }
+      setTimeout(function(){
+        typeWriter2();
+      },1500);
+
       /* Page No Background */
-      
       setTimeout(function(){ $('#page_no').css('background-color','#485f80'); }, 1000);
 
       /* Active Button */
@@ -81,7 +118,6 @@ $(document).ready(function() {
 });
 
 $(document).mousemove(function(e) {
-  var msg = "Handler for .mousemove() called at ";
   x = -e.pageX/100;
   y = -e.pageY/100;
   $('#logo').css('transform','translate('+ x +'px,'+ y +'px)');
