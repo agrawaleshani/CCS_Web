@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-  var i = 0,j=0;
+  var i=0;
+  var j=0;
 
   /* Active Button */
 
@@ -32,24 +33,23 @@ $(document).ready(function() {
 
       /* Typewriter */
 
-
-        var txt = '< Events >';
-        var speed = 500;
-      
-        function typeWriter() {
-          
-          if (i < txt.length) {
-            document.getElementById('ab_b_span').innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, 80);
-          }
+      var txt = '< Events >';
+      var speed = 500;
+    
+      function typeWriter() {
+        
+        if (i < txt.length) {
+          document.getElementById('ab_b_span').innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, 80);
         }
-        setTimeout(function(){
-          typeWriter();
-        },1500);
-       
-       /* Page No Background */
-       setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
+      }
+      setTimeout(function(){
+        typeWriter();
+      },1500);
+      
+      /* Page No Background */
+      setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
 
       /* Active Button */
       $('.btn').removeClass('nav_active');
@@ -71,7 +71,6 @@ $(document).ready(function() {
     $('#b_3').click(function(){
 
       /* Typewriter */
-
 
       var txt = '< Team of Professionals >';
       var speed = 500;
@@ -125,6 +124,8 @@ $(document).mousemove(function(e) {
 
 
 $(document).scroll(function() {
+
+  /* Opacity Change of Logo and Secodary Element of 1st page of 3 sections */
 
   var scroll=$(this).scrollTop();
   var h=document.body.clientHeight;

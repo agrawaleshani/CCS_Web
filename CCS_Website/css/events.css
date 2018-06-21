@@ -1,17 +1,12 @@
+/* Page1 */
+
 #ep1{
-  position: relative;
   background-color:  #2a3749 ;
-  background-attachment: fixed;
 }
+
+/* Page2 */
 
 #ep2{
-  background-color: #ddedef;
+  background-color: #2a3749 ;
 }
 
-#ep3{
-  background-color: #c6e0e4;
-}
-
-#ab_block{
-
-}

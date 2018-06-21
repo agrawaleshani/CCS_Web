@@ -2,6 +2,20 @@
   z-index: 10;
 }
 
+/* Content Block on Page 2 of every section */
+
+.content{
+  position: relative;
+  top:2%;
+  height:96%;
+  width:98%;
+  z-index: 4;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+
 /* Block */
 
 .block{

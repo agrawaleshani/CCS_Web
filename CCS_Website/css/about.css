@@ -1,14 +1,7 @@
+/* Page1 */
+
 #ap1{
   background:#000;
-}
-
-#ap2{
-  background-color: #e7eeed;
-  color:black;
-}
-
-#ap3{
-  background-color: #e9ecc9;
 }
 
 /* Floating icons */
@@ -129,4 +122,11 @@ a:nth-child(0) {
           animation: float 3.5s infinite ease-in-out;
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
+}
+
+/* Page2 */
+
+#ap2{
+  background-color:black;
+  color:white;
 }
