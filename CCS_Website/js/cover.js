@@ -33,20 +33,19 @@ $(document).ready(function() {
 
       /* Typewriter */
 
-      var txt = '< Events >';
-      var speed = 500;
+      var txt = '< Projects and Events >';
     
       function typeWriter() {
         
         if (i < txt.length) {
           document.getElementById('ab_b_span').innerHTML += txt.charAt(i);
           i++;
-          setTimeout(typeWriter, 80);
+          setTimeout(typeWriter, 100);
         }
       }
       setTimeout(function(){
         typeWriter();
-      },1500);
+      },1300);
       
       /* Page No Background */
       setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
@@ -72,20 +71,19 @@ $(document).ready(function() {
 
       /* Typewriter */
 
-      var txt = '< Team of Professionals >';
-      var speed = 500;
+      var txt = '< A Team of Professionals >';
     
       function typeWriter2() {
         
         if (j < txt.length) {
           document.getElementById('tm_b_span').innerHTML += txt.charAt(j);
           j++;
-          setTimeout(typeWriter2, 80);
+          setTimeout(typeWriter2, 100);
         }
       }
       setTimeout(function(){
         typeWriter2();
-      },1500);
+      },1300);
 
       /* Page No Background */
       setTimeout(function(){ $('#page_no').css('background-color','#485f80'); }, 1000);
@@ -108,10 +106,26 @@ $(document).ready(function() {
 
     });
 
+    /* Animation for on-click scrolling */
+
+    y=document.body.clientHeight;
+    var scroll=$(this).scrollTop();
+
+    /* Arrow Click Slide Down */
+
     $('.slide').click(function(e){
       e.preventDefault();
-      y=document.body.clientHeight;
       $('html,body').stop(true, false).animate({scrollTop:y},800);
+    });
+    
+    /* Logo Click Slide Up */
+
+    $('#ccs_logo').click(function(e){
+      if(scroll>y/2)
+      {
+        e.preventDefault();
+        $('html,body').stop(true, false).animate({scrollTop:0},800);
+      }
     });
 
 });

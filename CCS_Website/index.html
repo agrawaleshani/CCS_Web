@@ -10,17 +10,18 @@
   <link rel="stylesheet" type="text/css" href="css/events.css">
   <link rel="stylesheet" type="text/css" href="css/team.css">
   <link rel="stylesheet" type="text/css" href="css/cover.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
+  <script src="js/loader.js"></script>
   <script src="js/cover.js"></script>
   <script src="js/par_cover.js"></script>
   <script src="js/cover_sm.js"></script>
@@ -29,7 +30,11 @@
 </head>
 
 <body>
-
+<!--
+<div class="loader_cover">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+-->
 <div class="container">
 
   <img src="img/ccs_logo.png" alt="Nature" id="logo">
@@ -38,7 +43,7 @@
     <div class="btn" id="b_1">HOME</div>
     <div class="btn" id="b_2">EVENTS</div>
     <div class="btn" id="b_3">TEAM</div>
-    <div class="btn" id="b_4">TIMELINE</div>
+    <div class="btn" id="b_4">CONTACT</div>
   </div>
 
   <a class="slide">
@@ -58,6 +63,11 @@
     <div id="msg_icon"></div>
   </div>
 
+<!--
+  <div id="ccs_logo">
+    <div id="logo_icon"></div>
+  </div>
+-->
 
   <div class="about sec">
 
@@ -79,17 +89,11 @@
 
     <div class="page" id="ap2">
       
-      <div id="about" class="content">
+      <div id="about_con" class="content">
 
-        <div id="reel">
-          <div id="reel_fil1">
-              <div id="ar_f" class="ar"></div>
-          </div>
-          <div id="reel_fil2">
-              <div id="ar_b" class="ar"></div>
-          </div>
-        </div>
-     </div> 
+        About FFFFS
+
+      </div> 
 
     </div>
 
@@ -103,25 +107,19 @@
 
       <div class="block" id="ab_block">
 
-        <span id="ab_b_span"></span>
+        <span id="ab_b_span" class="span_block"></span>
 
       </div>
 
     </div>
 
 
-    <div class="page" id="ep2">
+    <div class="page" id="ep2" >
       
-      <div id="about" class="content">
+      <div id="events_con" class="content">
 
-        <div id="reel">
-          <div id="reel_fil1">
-              <div id="ar_f" class="ar"></div>
-          </div>
-          <div id="reel_fil2">
-              <div id="ar_b" class="ar"></div>
-          </div>
-        </div>
+        Events
+       
      </div> 
 
     </div>
@@ -134,7 +132,7 @@
 
       <div class="block" id="tm_block">
 
-        <span id="tm_b_span" ></span>
+        <span id="tm_b_span" class="span_block"></span>
 
       </div>
 
@@ -143,16 +141,10 @@
 
     <div class="page" id="tp2">
       
-      <div id="about" class="content">
+      <div id="team_con" class="content">
 
-        <div id="reel">
-          <div id="reel_fil1">
-              <div id="ar_f" class="ar"></div>
-          </div>
-          <div id="reel_fil2">
-              <div id="ar_b" class="ar"></div>
-          </div>
-        </div>
+        Team
+
      </div> 
 
     </div>
