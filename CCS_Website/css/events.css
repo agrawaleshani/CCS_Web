@@ -8,5 +8,74 @@
 
 #ep2{
   background-color: #2a3749 ;
+  overflow: hidden;
 }
 
+#qe2{
+  height: 296.4024px;
+  width: 230.5836px;
+  background-image: url(../img/quotes/ep_q2.png);
+  left:7%;
+  top:25%;
+}
+
+
+#qe1{
+  height: 296.4024px;
+  width: 230.5836px;
+  background-image: url(../img/quotes/ep_q1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  right:7%;
+  top:25%;
+}
+
+#events_con1{
+  overflow: hidden;
+  background-image: url(../img/Back/Events_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.ev2_icon{
+  z-index: 999;
+  position: absolute;
+  bottom:7%;
+  left:4%;
+  opacity: 0;
+  -webkit-transform: translate(-400px,0);
+  transform: translate(-400px,0);
+  transition: all 2s ease;
+}
+
+.move_ev2_icon{
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  #events_con1{
+    background-image: none;
+  }
+  .ev2_icon{
+    left:5%;
+  }
+  .move_ev2_icon{
+    transform: translateX(0px);
+  }
+}
+
+/* Page3 */
+
+#ep3{
+  height:5%;
+  background-color:white;
+  margin-top: 2%;
+  margin-bottom:2%;
+}

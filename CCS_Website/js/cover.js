@@ -1,3 +1,6 @@
+var token_1=0;
+var token_2=0;
+
 $(document).ready(function() {
 
   var i=0;
@@ -8,6 +11,10 @@ $(document).ready(function() {
     $('#b_1').addClass('nav_active');
 
     $('#b_1').click(function(){
+
+      /* Quotes */
+
+      $('.q').removeClass('move_down');
 
       /* Page No Background */
       setTimeout(function(){ $('#page_no').css('background-color','#000'); }, 1000);
@@ -30,6 +37,19 @@ $(document).ready(function() {
     });
 
     $('#b_2').click(function(){
+      
+      token_1=1;
+      token_2=0;
+
+      /* Quotes */
+
+      $('.q').removeClass('move_down');
+
+      setTimeout(function(){ 
+        
+        $('.qe').addClass('move_down');
+          
+      }, 1000);
 
       /* Typewriter */
 
@@ -38,7 +58,7 @@ $(document).ready(function() {
       function typeWriter() {
         
         if (i < txt.length) {
-          document.getElementById('ab_b_span').innerHTML += txt.charAt(i);
+          document.getElementById('ev_b_span').innerHTML += txt.charAt(i);
           i++;
           setTimeout(typeWriter, 100);
         }
@@ -68,6 +88,20 @@ $(document).ready(function() {
     });
 
     $('#b_3').click(function(){
+
+    token_1=0;
+    token_2=1;
+
+      /* Quotes */
+
+      $('.q').removeClass('move_down');
+
+      setTimeout(function(){ 
+        
+        $('.qt').addClass('move_down');
+
+      }, 1000);
+
 
       /* Typewriter */
 
@@ -108,20 +142,20 @@ $(document).ready(function() {
 
     /* Animation for on-click scrolling */
 
-    y=document.body.clientHeight;
-    var scroll=$(this).scrollTop();
+    var y=document.body.clientHeight;
+    
+    scrollv=$(this).scrollTop()
 
-    /* Arrow Click Slide Down */
-
-    $('.slide').click(function(e){
+      $('.slide').click(function(e){
       e.preventDefault();
       $('html,body').stop(true, false).animate({scrollTop:y},800);
-    });
+      });
     
     /* Logo Click Slide Up */
 
     $('#ccs_logo').click(function(e){
-      if(scroll>y/2)
+      
+      if(scrollv>y/3)
       {
         e.preventDefault();
         $('html,body').stop(true, false).animate({scrollTop:0},800);
@@ -131,19 +165,53 @@ $(document).ready(function() {
 });
 
 $(document).mousemove(function(e) {
+
   x = -e.pageX/100;
   y = -e.pageY/100;
   $('#logo').css('transform','translate('+ x +'px,'+ y +'px)');
+
 });
 
 
 $(document).scroll(function() {
 
+  /* Scroll Quotes */
+
+  scrollv=$(this).scrollTop()
+  if(token_1==1)
+  {
+      setTimeout(function(){
+
+      $('#qe1').css({
+          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
+          });
+      
+      $('#qe2').css({
+          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
+          });
+
+      },500);
+  }
+
+  if(token_2==2)
+  {
+      setTimeout(function(){
+
+      $('#qt1').css({
+          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
+          });
+      
+      $('#qt2').css({
+          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
+          });
+      },500);
+  }
+
   /* Opacity Change of Logo and Secodary Element of 1st page of 3 sections */
 
   var scroll=$(this).scrollTop();
   var h=document.body.clientHeight;
-  var val=1-scroll/(0.5*h);
+  var val=1-scroll/(0.53*h);
   var val_icon=1-scroll/(0.2*h);
   var val_block=0.5-scroll/(0.2*h);
 
@@ -196,6 +264,6 @@ $(document).scroll(function() {
       $('#tm_block').fadeIn(0);
     }
 
-
+// Page Number Disappear'
 
 });

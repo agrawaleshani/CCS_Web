@@ -47,24 +47,28 @@ $(document).scroll(function() {
         });
     }
 
-    /* Content Block - Page 2 of every Section Parallax */
+    /* Content Block + About Title - Page 2 of every Section Parallax */
 
     $('.content').each(function() {
-
+        
         var ho=$(this).offset().top;
-    
         input= ((scroll-ho+(h/1.3))/(0.55*h));
+
         if(input<0)
         input=0;
     
-    
         $(this).css('opacity',input);
+
+    });
+
+    var habt=$('#abt_header').offset().top;
+    head_input= ((scroll-habt+(h/1.3))/(0.55*h));
+
+    head_input-=1;
     
-        });
+    $('#abt_header').css('opacity',head_input);
  
 });
-
-
 
 $(document).ready(function() {
 

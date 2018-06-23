@@ -1,5 +1,7 @@
+/*
+
 $(document).ready(function(){
-  /*
+
     $('html').css('overflow','hidden');
 
     setTimeout(function(){
@@ -7,6 +9,8 @@ $(document).ready(function(){
         $('html').css('overflow-y','visible');
     },3000);
 
-    */
+   
 
 })
+
+*/

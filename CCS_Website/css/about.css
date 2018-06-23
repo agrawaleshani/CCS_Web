@@ -21,14 +21,14 @@
   justify-content: center;
 }
 
-a {
+#fi {
   font-size: 25px;
   color: #4bf7d3;
   padding: 3px 2px;
   margin: 2px 3px;
   transition: all 0.3s ease;
 }
-a:hover {
+#fi:hover {
   color: #80ffdb;
 }
 
@@ -60,7 +60,7 @@ a:hover {
             transform: translate(0px, 0px);
   }
 }
-a:nth-child(7) {
+#fi:nth-child(7) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -68,15 +68,23 @@ a:nth-child(7) {
           animation-delay: 0s;
 }
 
-a:nth-child(6) {
+#fi:nth-child(6) {
+  display: inline-block;
+  -webkit-animation: float 3.5s infinite ease-in-out;
+          animation: float 3.5s infinite ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#fi:nth-child(5) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+          animation-delay: 0.5;
 }
 
-a:nth-child(5) {
+#fi:nth-child(4) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -84,7 +92,7 @@ a:nth-child(5) {
           animation-delay: 1s;
 }
 
-a:nth-child(4) {
+#fi:nth-child(3) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -92,7 +100,7 @@ a:nth-child(4) {
           animation-delay: 1.5s;
 }
 
-a:nth-child(3) {
+#fi:nth-child(2) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -100,7 +108,7 @@ a:nth-child(3) {
           animation-delay: 2s;
 }
 
-a:nth-child(2) {
+#fi:nth-child(1) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -108,7 +116,7 @@ a:nth-child(2) {
           animation-delay: 2.5s;
 }
 
-a:nth-child(1) {
+#fi:nth-child(0) {
   display: inline-block;
   -webkit-animation: float 3.5s infinite ease-in-out;
           animation: float 3.5s infinite ease-in-out;
@@ -116,17 +124,22 @@ a:nth-child(1) {
           animation-delay: 3s;
 }
 
-a:nth-child(0) {
-  display: inline-block;
-  -webkit-animation: float 3.5s infinite ease-in-out;
-          animation: float 3.5s infinite ease-in-out;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
-}
-
 /* Page2 */
 
 #ap2{
   background-color:black;
   color:white;
+}
+
+#about_con2{
+  background-color:#e9e8e3;
+}
+
+/* Page3 */
+
+#ap3{
+  height:5%;
+  background-color:white;
+  margin-top: 2%;
+  margin-bottom:2%;
 }

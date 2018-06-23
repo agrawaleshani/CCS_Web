@@ -13,6 +13,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+  overflow: hidden;
 }
 
 
@@ -24,8 +25,8 @@
   font-family: monospace;
   font-size: 25px;
   top:70%;
-  right:27.5%;
-  width:45%;
+  right:30%;
+  width:40%;
   height:7%;
   text-align: center;
   color: black;
@@ -41,16 +42,37 @@
 .block:hover{
   background-color: black;
   color:white;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
 
   .block{
-    width:55%;
+    width:60%;
     top:68%;
     right:22.5%;
     font-size: 16px;
     font-size: 16px;
+  }
+}
+
+.q{
+  z-index: 5;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 2.5s , opacity 1s;
+  transform:translateY(-500px);
+  opacity: 0;
+}
+
+.move_down{
+  opacity:1;
+  transform: translateY(0px);
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .q{
+    display: none;
   }
 }
