@@ -7,7 +7,9 @@
 html{
     overflow-x: hidden;
 }
-
+a{
+  text-decoration: none;
+}
 .container{
   margin:0;
   padding:0;
@@ -22,6 +24,7 @@ html{
   width:100%;
   transition: left 1s ease-in;
   display: block
+  overflow-x: hidden;
 }
 
 .page{

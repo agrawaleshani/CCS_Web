@@ -1,0 +1,9 @@
+.title{
+    position:absolute;
+    z-index:999;
+    top:-12%;
+    display:block;
+    margin:auto;
+    opacity: 0;
+  }
+

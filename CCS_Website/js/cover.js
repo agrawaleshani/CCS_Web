@@ -190,7 +190,7 @@ $(document).scroll(function() {
           '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
           });
 
-      },500);
+      },200);
   }
 
   if(token_2==2)
@@ -204,7 +204,7 @@ $(document).scroll(function() {
       $('#qt2').css({
           '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
           });
-      },500);
+      },200);
   }
 
   /* Opacity Change of Logo and Secodary Element of 1st page of 3 sections */

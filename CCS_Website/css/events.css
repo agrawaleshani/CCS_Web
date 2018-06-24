@@ -4,13 +4,6 @@
   background-color:  #2a3749 ;
 }
 
-/* Page2 */
-
-#ep2{
-  background-color: #2a3749 ;
-  overflow: hidden;
-}
-
 #qe2{
   height: 296.4024px;
   width: 230.5836px;
@@ -30,14 +23,17 @@
   top:25%;
 }
 
+/* Page2 */
+
+#ep2{
+  background-color: #2a3749 ;
+}
+
 #events_con1{
-  overflow: hidden;
   background-image: url(../img/Back/Events_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 .ev2_icon{
   z-index: 999;
