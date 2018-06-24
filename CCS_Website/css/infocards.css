@@ -4,24 +4,23 @@
 
     div.SecondDiv
 	{
-        bottom:15%;
+        bottom:-10%;
+ 
     }
     
 }
-
 	div.SecondDiv
 	{
 		overflow: hidden;
         position: absolute;
-        bottom:15%;
+        bottom:5%;
         right:20%;
-        height:60%;
+        height:30%;
 		width:60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-   
 	}
 	img.PicFlip
 	{
@@ -49,13 +48,12 @@
 
 	div.PicFlipContainer1
     {
-        border-radius: 50%;
         margin: 1% 1%;
 		transform-style: preserve-3d;
 		transition: all 0.7s ease;
 		float:left;
-		width:210px;
-		height:162px;
+		width:200px;
+		height:200px;
 	}
 	div.PicFlipContainer1:hover
 	{
@@ -63,22 +61,24 @@
 	}
 	div.FlipFront
 	{
-        border-radius: 50%;
+
 		position: absolute;
 		width:200px;
 		height:200px;
 		backface-visibility: hidden;
-		background-color:black;
-		color:white;
+		background-color:aquamarine;
+        color:white;
+        border-radius: 50%;
 	}
 	div.FlipBack
 	{
-        border-radius: 50%;
+
 		position: relative;
 		width:200px;
 		height: 200px;
 		backface-visibility: hidden;
 		transform: rotateX(180deg);
-		background-color:black;
-		text-align: center;
+		background-color:#00cc99;
+        text-align: center;
+        border-radius: 50%;
 	}
