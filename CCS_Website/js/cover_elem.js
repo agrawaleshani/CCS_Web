@@ -10,7 +10,7 @@ $(document).scroll(function() {
     {
 
         $('#logo_icon').css('background-image',' url(img/icons/logo_icon_b.png)');
-
+/*
         $('#msg_icon').css('background-image',' url(img/icons/email-16-black.png)');
         $('#msg').css('background-color','transparent');
 
@@ -27,13 +27,13 @@ $(document).scroll(function() {
             $('#msg_icon').css('background-image',' url(img/icons/email-16-black.png)');
         });
 
-
+*/
     }
     if(scroll<h)
     {
 
         $('#logo_icon').css('background-image',' url(img/icons/logo_icon_w.png)');
-
+/*
         $('#msg_icon').css('background-image',' url(img/icons/email-16-white.png)');
         $('#msg').css('background-color','transparent');
 
@@ -45,6 +45,7 @@ $(document).scroll(function() {
             $('#msg').css('background-color','white');
             $('#msg_icon').css('background-image',' url(img/icons/email-16-black.png)');
         });
+*/
     }
 
     /* Content Block + About Title - Page 2 of every Section Parallax */

@@ -58,6 +58,7 @@
 
   #events_con1{
     background-image: none;
+    background-color: aliceblue;
   }
   .ev2_icon{
     left:5%;
@@ -70,8 +71,10 @@
 /* Page3 */
 
 #ep3{
-  height:5%;
-  background-color:white;
-  margin-top: 2%;
-  margin-bottom:2%;
+  background-color:#2a3749;
+}
+
+#events_con2{
+  bottom:0;
+  height:80%;
 }

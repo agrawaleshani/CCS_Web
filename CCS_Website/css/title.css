@@ -6,4 +6,21 @@
     margin:auto;
     opacity: 0;
   }
+.t2{
+  top:0%;
+}
 
+#abt_header2{
+  top:5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .t2{
+    top:-2%;
+  }
+  
+#abt_header2{
+  top:-5%;
+}
+}

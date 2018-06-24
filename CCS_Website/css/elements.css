@@ -16,6 +16,16 @@
   overflow: hidden;
 }
 
+.c2{
+  height:88%;
+  top:10%;
+  position: absolute;
+}
+
+.p3{
+  background-color: red;
+}
+
 
 /* Block */
 

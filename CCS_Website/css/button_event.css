@@ -1,12 +1,12 @@
 .wr{
     position: absolute;
-    top:12%;
+    top:11%;
     left:3%;
     height:60%;
     width:50%;
     display: flex;
-    transform:translateY(30px);
-    transition: transform 1s ease-out;
+    transform:translateY(100px);
+    transition: transform 1.5s ease-in;
     flex-direction: column;
 }
 
@@ -72,23 +72,29 @@
 
   @media only screen and (max-width: 768px) {
 
+    .bt{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
     .wr{
         left:5%;
+        top:10%;
         width:85%;
     }
 
     .btext{
         left:2%;
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #button-blue{
         font-size: 14px;
-        height:10%;
+        height:15%;
         line-height: 5px;
     }
     .white_ol {
-       height:10%;
+       height:15%;
       }
   }

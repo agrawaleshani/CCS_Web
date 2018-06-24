@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/elements.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/about_2.css">
+  <link rel="stylesheet" type="text/css" href="css/about_3.css">
   <link rel="stylesheet" type="text/css" href="css/events.css">
   <link rel="stylesheet" type="text/css" href="css/team.css">
   <link rel="stylesheet" type="text/css" href="css/cover.css">
@@ -22,6 +23,10 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
@@ -29,6 +34,7 @@
 
   <script src="js/loader.js"></script>
   <script src="js/cover.js"></script>
+  <script src="js/about.js"></script>
   <script src="js/title.js"></script>
   <script src="js/par_cover.js"></script>
   <script src="js/cover_sm.js"></script>
@@ -38,11 +44,11 @@
 </head>
 
 <body>
-
+<!--
 <div class="loader_cover">
     <span class="loader"><span class="loader-inner"></span></span>
 </div>
-
+-->
 <div class="container">
 
   <img src="img/ccs_logo.png" alt="Nature" id="logo">
@@ -70,11 +76,11 @@
   <div id="msg">
     <div id="msg_icon"></div>
   </div>
-
+<!--
   <div id="ccs_logo">
     <div id="logo_icon"></div>
   </div>
-
+-->
 
 <!-- About Section -->
 
@@ -98,17 +104,26 @@
 
 
     <div class="page" id="ap2">
-      <img class="title" id="abt_header" src="img/title/title_about.png"></img>
-      <div id="about_con2" class="content">
+      <img class="title" id="abt_header" src="img/title/title_tf.png"></img>
+      <div id="about_con1" class="content">
 
-        <div class="intro">
-            <p class="intro_text">The Creative Computing Society is one of the most active and elite technical societies of Thapar Institute Of Engineering and Technology.</p>
+        <div class ='head'>
+            <div class="ah ah_1">WELCOME TO CCS</div>
+            <div class='ah ah_2'>YOUR BUG IS OUR BOUNTY</div>
         </div>
 
+        <div class="intro">
+            <p class="intro_text" id="intro_1">The Creative Computing Society is one of the most elite technical societies of Thapar Institute Of Engineering and Technology</p>
+            <p class="intro_text" id="intro_1">The society strives to encourage students to develop an analytical temperament in the field of technology and innovation</p>
+            <p class="intro_text" id="intro_2">We aim to garner creativity and talent and propogate awareness regarding the enthralling technology world</p>
+            <p class="intro_text" id="intro_2"> Over the years the society has had numerous pivotal collaborations with organisations like Google Developers Group, Women Techmakers, Mozilla Webmaker, PyData to name a few, to instill conscientiousness</p>
+            <p class="intro_text" id="intro_2">It acts as a platform for students to showcase, use and nurture their skills to discover their best lying potential</p>
+        </div>
+<!--
         <img src="img/back/ab_quote.png" id='ab_quote'>
         <img class ="svg_ev" id="bar_1" src="img/Icons/arrow-down.svg">
         <img class ="svg_ev" id="bar_2" src="img/Icons/arrow-down.svg">
-
+--> 
         <!-- Infocards --> 
 <!--
         <div class="Mainframe">
@@ -145,7 +160,35 @@
         <!-- Infocards --> 
 
       </div> 
+    </div>
 
+    
+    <div class="page p3" id="ap3">
+        <img class="title t2" id="abt_header2" src="img/title/title_about.png"></img>
+        <div id="about_con2" class="content c2">
+          
+          <div class="fb">
+            <div class="bl" id="b1"><br/><br/>
+              <p class="sb">Our Mission</p><br/><br/>
+              <p class="pb">We are dedicated bridge the gap between the technology in today’s world and the students of TIET.</p>
+            </div>
+            <div class="bl" id="b2"><br/><br/>
+              <p class="sb">Our Promise</p><br/><br/>
+              <p class="pb">To innovate and inpire young techies through exemplary behaviour and conscientiousness.</p>
+            </div>
+            <div class="bl" id="b3"><br/><br/>
+              <p class="sb">Our Ambition</p><br/><br/>
+              <p class="pb">To empower and to impart knowledge and profound experience to young Indian technocrats.</p>
+            </div>
+            <div class="bl" id="b4"><br/><br/>
+              <p class="sb">Our Values</p><br/><br/>
+              <p class="pb">At CCS, we perspire to make dreamt up ideas to life.</p>
+            </div>
+          </div>
+  
+
+       </div> 
+  
     </div>
 
   </div>
@@ -176,7 +219,7 @@
 
           <div class="wr">
             <div class="bt" id="bt1">
-              <a href="helix/helix.html" target="_blank"> 
+              <a href="chakravyuh/chak.html" target="_blank"> 
                 <input type="submit" value="Chakravyuh" id="button-blue"/>
                 <div class="white_ol w1"></div><br/><br/>
               </a>
@@ -186,7 +229,7 @@
             </div>
 
             <div class="bt" id="bt2">
-              <a href="chakravyuh/chak.html" target="blank">
+              <a href="helix/helix.html" target="blank">
                 <input type="submit" value="Helix" id="button-blue"/>
                 <div class="white_ol w2"></div><br/><br/>
               </a>
@@ -202,6 +245,17 @@
         
      </div> 
      
+    </div>
+
+    
+    <div class="page p3" id="ep3">
+        <img class="title t2" id="abt_header" src="img/title/title_proj.png"></img>
+        <div id="events_con2" class="content c2">
+  
+  
+  
+       </div> 
+  
     </div>
 
 
@@ -228,7 +282,7 @@
     </div>
 
     <div class="page" id="tp2">
-      
+      <img class="title" id="tm_header" src="img/title/title_team.png"></img>
       <div id="team_con1" class="content">
 
 
@@ -236,6 +290,17 @@
      </div> 
 
     </div>
+
+    <div class="page p3" id="tp3">
+        <img class="title t2" id="abt_header" src="img/title/title_core.png"></img>
+        <div id="team_con2" class="content c2">
+  
+  
+  
+       </div> 
+  
+    </div>
+  
 
   </div>
 

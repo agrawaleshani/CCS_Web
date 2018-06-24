@@ -223,7 +223,7 @@ $(document).scroll(function() {
   var no=((scroll)/h);
   no+=0.1;
   var page=Math.ceil(no);
-  document.getElementById("txt").innerHTML =page+' / 2';
+  document.getElementById("txt").innerHTML =page+' / 3';
 
 // Fade Out When Opacity is 0- Note to better code through iteration
 

@@ -161,6 +161,14 @@
     background-repeat:no-repeat;
 }
 
+#msg:hover{
+background-color: white;
+}
+#msg_icon:hover{
+    background-image: url(../img/icons/email-16-black.png);
+    }
+
+
 @media only screen and (max-width: 768px) {
 
     #msg{
