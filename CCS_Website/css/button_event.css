@@ -1,6 +1,6 @@
 .wr{
     position: absolute;
-    top:8%;
+    top:10%;
     left:3%;
     height:60%;
     width:50%;
@@ -75,7 +75,6 @@
     .wr{
         left:5%;
         width:85%;
-        height:
     }
 
     .btext{

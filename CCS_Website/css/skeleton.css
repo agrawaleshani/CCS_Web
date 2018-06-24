@@ -23,8 +23,7 @@ a{
   height:100%;
   width:100%;
   transition: left 1s ease-in;
-  display: block
-  overflow-x: hidden;
+  display: block;
 }
 
 .page{
