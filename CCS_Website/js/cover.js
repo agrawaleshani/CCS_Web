@@ -221,7 +221,7 @@ $(document).scroll(function() {
   $('#tm_block').css('opacity',val_block);
 
   var no=((scroll)/h);
-  no+=0.1;
+  no+=0.2;
   var page=Math.ceil(no);
   document.getElementById("txt").innerHTML =page+' / 3';
 

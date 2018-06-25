@@ -12,7 +12,6 @@ $(document).ready(function() {
     $('.ah_1').css('z-index','5');
     }
     i++;
-    console.log(i);
     },3000);
 });
 
@@ -24,25 +23,34 @@ $(document).scroll(function(){
 
     if(scrollv>check)
     {
-      $('.svg_1').addClass('final');
+        $('.svg_1').addClass('final');
 
-      $('.intro_text').each(function(i) {
+        $('.intro_text').each(function(i) {
 
         setTimeout(function(){
-          $('.intro_text').eq(i).addClass('final_it');
-          },200*(i+1));
-      });
+            $('.intro_text').eq(i).addClass('final_it');
+            },200*(i+1));
+        });
 
-      $('.head').addClass('final');
+        $('.head').addClass('final');
   
     }
   
     if(scrollv<check)
     {
-        $('.svg_1').removeClass('final');
-
-       $('.intro_text').removeClass('final_it');
-  
+        $('.intro_text').removeClass('final_it');
         $('.head').removeClass('final');
+    }
+
+    var check2=$('#ap3').offset().top-h-100;
+
+    if(scrollv>check2)
+    {
+      $('.fb').addClass('fin_fb');
+    }
+  
+    if(scrollv<check2)
+    {
+        $('.fb').removeClass('fin_fb');
     }
 });

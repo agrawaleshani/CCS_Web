@@ -53,12 +53,20 @@ $(document).scroll(function() {
     $('.content').each(function() {
         
         var ho=$(this).offset().top;
-        input= ((scroll-ho+(h/1.3))/(0.5*h));
+        input= ((scroll-ho+(h/1.4))/(0.6*h));
 
         if(input<0)
         input=0;
+
+        if(input>2){
+            input=3-input;
+        }
+
+        console.log(input);
+        
     
         $(this).css('opacity',input);
+
 
     });
 
