@@ -8,9 +8,9 @@ $(document).scroll(function() {
     
     if(scroll>h)
     {
-
-        $('#logo_icon').css('background-image',' url(img/icons/logo_icon_b.png)');
 /*
+        $('#logo_icon').css('background-image',' url(img/icons/logo_icon_b.png)');
+
         $('#msg_icon').css('background-image',' url(img/icons/email-16-black.png)');
         $('#msg').css('background-color','transparent');
 
@@ -31,9 +31,9 @@ $(document).scroll(function() {
     }
     if(scroll<h)
     {
-
-        $('#logo_icon').css('background-image',' url(img/icons/logo_icon_w.png)');
 /*
+        $('#logo_icon').css('background-image',' url(img/icons/logo_icon_w.png)');
+
         $('#msg_icon').css('background-image',' url(img/icons/email-16-white.png)');
         $('#msg').css('background-color','transparent');
 

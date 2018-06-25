@@ -142,7 +142,7 @@ $(document).ready(function() {
 
     /* Animation for on-click scrolling */
 
-    var y=document.body.clientHeight;
+    var y=$('.title').offset().top;
     
     scrollv=$(this).scrollTop()
 
@@ -155,7 +155,7 @@ $(document).ready(function() {
 
     $('#ccs_logo').click(function(e){
       
-      if(scrollv>y/3)
+      if(scrollv>y/2)
       {
         e.preventDefault();
         $('html,body').stop(true, false).animate({scrollTop:0},800);
