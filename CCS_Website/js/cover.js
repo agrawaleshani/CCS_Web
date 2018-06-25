@@ -29,10 +29,23 @@ $(document).ready(function() {
       setTimeout(function(){ $('html').css('overflow-y','visible'); }, 1000);
 
       /* Position Section */
+      
+      if (window.matchMedia('(min-width: 768px)').matches)
+      {
+        $('.about').css('left','0');
+        $('.events').css('left','100%');
+        $('.team').css('left','200%');
+      }
+      /* Position Section for Windows query */
+        
+      if (window.matchMedia('(max-width: 768px)').matches)
+      {
+        $('.about').css('left','0');
+        $('.events').css('left','-100%');
+        $('.team').css('left','-200%');
+      }
 
-      $('.about').css('left','0');
-      $('.events').css('left','100%');
-      $('.team').css('left','200%');
+      /* */
 
     });
 
@@ -79,11 +92,27 @@ $(document).ready(function() {
       $('html').css('overflow','hidden');
       setTimeout(function(){ $('html').css('overflow-y','visible'); }, 1000);
 
-      /* Position Section */
 
-      $('.about').css('left','-100%');
-      $('.events').css('left','0');
-      $('.team').css('left','100%');
+      /* Position Section */
+      
+      if (window.matchMedia('(min-width: 768px)').matches)
+      {
+        $('.about').css('left','-100%');
+        $('.events').css('left','0');
+        $('.team').css('left','100%');
+      }
+      /* Position Section for Windows query */
+
+      if (window.matchMedia('(max-width: 768px)').matches)
+      {
+        $('.about').css('left','-200%');
+        $('.events').css('left','0%');
+        $('.team').css('left','-100%');
+
+      }
+
+      /* */
+
 
     });
 
@@ -132,11 +161,25 @@ $(document).ready(function() {
 
       setTimeout(function(){ $('html').css('overflow-y','visible'); }, 1000);
 
-      /* Position Section */
 
-      $('.about').css('left','-200%');
-      $('.events').css('left','-100%');
-      $('.team').css('left','0');
+      /* Position Section */
+      
+      if (window.matchMedia('(min-width: 768px)').matches)
+      {
+        $('.about').css('left','-200%');
+        $('.events').css('left','-100%');
+        $('.team').css('left','0%');
+      }
+      /* Position Section for Windows query */
+
+      if (window.matchMedia('(max-width: 768px)').matches)
+      {
+        $('.about').css('left','-200%');
+        $('.events').css('left','-100%');
+        $('.team').css('left','0%');
+      }
+
+            /* */
 
     });
 
