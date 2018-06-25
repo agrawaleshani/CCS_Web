@@ -61,7 +61,22 @@
     background-color: aliceblue;
   }
   .ev2_icon{
+    bottom:10%;
     left:5%;
+  }
+  .move_ev2_icon{
+    transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  #events_con1{
+    background-image: none;
+    background-color: aliceblue;
+  }
+  .ev2_icon{
+    left:10%;
   }
   .move_ev2_icon{
     transform: translateX(0px);

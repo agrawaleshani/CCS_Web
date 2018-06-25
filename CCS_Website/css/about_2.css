@@ -89,3 +89,17 @@
     }
   
   }
+  @media only screen and (max-width: 430px) {
+
+    .intro{
+    top: 28%;
+    font-size: 15px;
+    width:70%;
+    }
+
+    .head{
+      height:5%;
+      font-size:25px;
+      transform: translateY(10px);
+    }
+}

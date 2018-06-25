@@ -7,9 +7,11 @@
 html{
   overflow-x: hidden;
 }
+
 a{
   text-decoration: none;
 }
+
 .container{
   margin:0;
   padding:0;
@@ -53,3 +55,4 @@ a{
   left: 200%;
   z-index: 1;
 }
+
