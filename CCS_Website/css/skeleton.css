@@ -32,6 +32,7 @@ a{
   position: relative;
   height:100%;
   display: block;
+
 }
 
 /* About Section */
@@ -40,7 +41,6 @@ a{
   left: 0;
   z-index: 1
 }
-
 
 /* Events Section */
 .events{
@@ -56,3 +56,21 @@ a{
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+
+  /* About Section */
+  .about{
+    left: 0;
+  }
+
+  /* Events Section */
+  .events{
+    left:-100%;
+  }
+
+  /* Team Section */
+  .team{
+    left: -200%;
+  }
+
+}

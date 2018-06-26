@@ -36,9 +36,9 @@
 @media only screen and (max-width: 400px) {
 
     #logo{
-      max-width: 60%;
-      top:33%;
-      left:16%;
+      max-width: 65%;
+      top:28%;
+      left:18%;
     }
   }
 /*  Nav Bar */
@@ -77,6 +77,10 @@
       text-align: center;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       transition: text-decoration 5s;
+    }
+    .nav{
+        top:1%;
+        right:1%;
     }
 }
 
@@ -187,9 +191,12 @@ background-color: white;
 @media only screen and (max-width: 400px) {
 
     #msg{
-        top:5.5%;
+        top:3.5%;
         height: 50px;
         width:50px;  
+    }
+    #msg_icon{
+        background-image: url(../img/icons/email-16-white-sm.png);
     }
 }
 
@@ -207,7 +214,7 @@ background-color: white;
 }
 
 #logo_icon{
-    background-image: url(../img/icons/logo_icon_w.png);
+   display: none;
     height: 100%;
     width: 100%;
     margin:auto;
@@ -218,14 +225,19 @@ background-color: white;
 @media only screen and (max-width: 768px) {
 
     #ccs_logo{
-        top:4%;
+        top:2%;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+
+    #ccs_logo{
+        left:0%;
+    }
 
     #logo_icon{
-    background-image: url(../img/icons/back.png);
+        display: block;
+        background-image: url(../img/icons/back.png);
     }
 }
 
@@ -233,16 +245,25 @@ background-color: white;
 /* Arrow */
 
 .slide {
-  z-index:100;
-	width: 60px;
-	height: 82px;
-	position: fixed;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
-  opacity: 1;
-  transition: opacity 2s ease-in;
+    z-index:100;
+    width: 60px;
+    height: 82px;
+    position: fixed;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    opacity: 1;
+    transition: opacity 2s ease-in;
 }
+
+@media only screen and (max-width: 400px) {
+
+    .slide {
+        position: fixed;
+        bottom:7%;
+    }
+}
+
 
 .slide:hover{
     cursor: pointer;

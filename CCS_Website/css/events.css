@@ -5,18 +5,22 @@
 }
 
 #qe2{
+  position: absolute;
   height: 296.4024px;
   width: 230.5836px;
-  background-image: url(../img/quotes/ep_q2.png);
+  background-image: url(../img/quotes/ep_q1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   left:7%;
   top:25%;
 }
 
 
 #qe1{
+  position: absolute;
   height: 296.4024px;
   width: 230.5836px;
-  background-image: url(../img/quotes/ep_q1.png);
+  background-image: url(../img/quotes/ep_q2.png);
   background-repeat: no-repeat;
   background-size: cover;
   right:7%;

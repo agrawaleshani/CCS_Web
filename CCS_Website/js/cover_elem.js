@@ -8,7 +8,7 @@ $(document).scroll(function() {
     
     if(scroll>h)
     {
-/*
+/*  
         $('#logo_icon').css('background-image',' url(img/icons/logo_icon_b.png)');
 
         $('#msg_icon').css('background-image',' url(img/icons/email-16-black.png)');
@@ -59,12 +59,9 @@ $(document).scroll(function() {
         input=0;
 
         if(input>2){
-            input=3-input;
+            input=2.8-input;
         }
-
-        console.log(input);
-        
-    
+            
         $(this).css('opacity',input);
 
 

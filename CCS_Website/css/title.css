@@ -15,7 +15,7 @@
 }
 
 #tm_header{
-  top:-8%;
+  top:-10%;
 }
 
 
@@ -30,7 +30,15 @@
     top:-2%;
   }
   
-#abt_header2{
-  top:-5%;
+  #abt_header2{
+    top:-5%;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+
+
+  #abt_header2{
+    top:5%;
+  }
 }

@@ -236,7 +236,7 @@ $(document).scroll(function() {
       },200);
   }
 
-  if(token_2==2)
+  if(token_2==1)
   {
       setTimeout(function(){
 
@@ -245,7 +245,7 @@ $(document).scroll(function() {
           });
       
       $('#qt2').css({
-          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
+          '-webkit-transform' : 'translateX('+ 0.2*scrollv +'%)',
           });
       },200);
   }

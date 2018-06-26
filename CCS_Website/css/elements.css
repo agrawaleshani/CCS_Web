@@ -56,10 +56,14 @@
 
 @media only screen and (max-width: 768px) {
 
+  .q{
+    display: none;
+  }
+
   .block{
-    width:60%;
+    width:70%;
     top:68%;
-    right:22.5%;
+    right:17%;
     font-size: 16px;
     font-size: 16px;
   }
@@ -67,9 +71,21 @@
 
 @media only screen and (max-width: 400px) {
 
+  .q{
+    display: none;
+  }
+
+  .block{
+    width:60%;
+    top:63%;
+    right:22.5%;
+    font-size: 16px;
+    font-size: 16px;
+  }
+
   .block{
     right:10%;
-   width:80%;
+    width:80%;
   }
 }
 
@@ -86,11 +102,4 @@
 .move_down{
   opacity:1;
   transform: translateY(0px);
-}
-
-@media only screen and (max-width: 1200px) {
-
-  .q{
-    display: none;
-  }
 }

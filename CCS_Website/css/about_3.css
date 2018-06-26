@@ -14,7 +14,7 @@
 
 .fb{
     position: absolute;
-    top:17%;
+    top:20%;
     left:50%;
     transform: translateX(-50%);
     display:flex;
@@ -68,16 +68,33 @@
 @media only screen and (max-width: 768px) {
     
     .fb{
-        top:10%;
+        top:13%;
         width: 100%;
     }
     .b1{
         width:100%;
     }
     .sb{
-        font-size: 20px;
+        font-size: 23px;
     }
     .pb{
-        font-size: 15px;
+        font-size: 16px;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+
+    .fb{
+        top:20%;
+        width: 100%;
+    }
+    .b1{
+        width:100%;
+    }
+    .sb{
+        font-size: 22px;
+    }
+    .pb{
+        font-size: 12px;
+    }
+}
