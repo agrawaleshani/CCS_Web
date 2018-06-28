@@ -2,6 +2,7 @@ var token_1=0;
 var token_2=0;
 
 $(document).ready(function() {
+  
 
   var i=0;
   var j=0;

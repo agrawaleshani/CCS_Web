@@ -1,4 +1,5 @@
 /* Title + Logo Centered */
+var v=0;
 
 $(document).ready(function(){
 
@@ -9,11 +10,12 @@ $(document).ready(function(){
     });
 
     $('.title').each(function() {
-        console.log("hello");
 
-        $(this).css('right',''+($(window).width() - $(this).width())/2+'px');
-            
-        });
+        $(this).css('right',''+($('.page').width() - $(this).width())/2+'px');
+
+    });
+
+
 
     $('.fb').css({'top':''+($('.about_con2').height() - $('.fb').height())/2+'px','right':''+($('.about_con2').width() - $('.fb').width())/2+'px'});
  
