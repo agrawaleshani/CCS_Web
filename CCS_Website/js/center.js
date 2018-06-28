@@ -2,17 +2,18 @@
 
 $(document).ready(function(){
 
-    $('.title').each(function() {
-
-    $(this).css('right',''+($(window).width() - $(this).width())/2+'px');
-        
-    });
-
     $('.c2').each(function() {
 
         $(this).css('right',''+($('.page').width() - $(this).width())/2+'px');
             
     });
+
+    $('.title').each(function() {
+        console.log("hello");
+
+        $(this).css('right',''+($(window).width() - $(this).width())/2+'px');
+            
+        });
 
     $('.fb').css({'top':''+($('.about_con2').height() - $('.fb').height())/2+'px','right':''+($('.about_con2').width() - $('.fb').width())/2+'px'});
  

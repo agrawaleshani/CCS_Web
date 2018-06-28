@@ -82,10 +82,28 @@
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
+    
+    .fb{
+        top:17%;
+        width: 100%;
+    }
+    .b1{
+        width:100%;
+    }
+    .sb{
+        font-size: 22px;
+    }
+    .pb{
+        font-size: 14px;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
 
     .fb{
-        top:20%;
+        top:15%;
         width: 100%;
     }
     .b1{

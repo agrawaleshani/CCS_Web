@@ -185,8 +185,7 @@ $(document).ready(function() {
 
     /* Animation for on-click scrolling */
 
-    var y=$('.title').offset().top;
-    
+    var y=$('.content').offset().top;
     scrollv=$(this).scrollTop()
 
       $('.slide').click(function(e){
@@ -201,112 +200,22 @@ $(document).ready(function() {
       if(scrollv>y/2)
       {
         e.preventDefault();
-        $('html,body').stop(true, false).animate({scrollTop:0},800);
+        $('html,body').stop(true, false).animate({scrollTop:0},1000);
       }
     });
 
 });
 
+
+
 $(document).mousemove(function(e) {
-
-  x = -e.pageX/100;
-  y = -e.pageY/100;
-  $('#logo').css('transform','translate('+ x +'px,'+ y +'px)');
+  
+  if (window.matchMedia('(min-width: 768px)').matches)
+  {
+    x = -e.pageX/100;
+    y = -e.pageY/100;
+    $('#logo').css('transform','translate('+ x +'px,'+ y +'px)');  
+  }
 
 });
 
-
-$(document).scroll(function() {
-
-  /* Scroll Quotes */
-
-  scrollv=$(this).scrollTop()
-  if(token_1==1)
-  {
-      setTimeout(function(){
-
-      $('#qe1').css({
-          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
-          });
-      
-      $('#qe2').css({
-          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
-          });
-
-      },200);
-  }
-
-  if(token_2==1)
-  {
-      setTimeout(function(){
-
-      $('#qt1').css({
-          '-webkit-transform' : 'translate(0px,'+ -0.2*scrollv +'%)',
-          });
-      
-      $('#qt2').css({
-          '-webkit-transform' : 'translateX('+ 0.2*scrollv +'%)',
-          });
-      },200);
-  }
-
-  /* Opacity Change of Logo and Secodary Element of 1st page of 3 sections */
-
-  var scroll=$(this).scrollTop();
-  var h=document.body.clientHeight;
-  var val=1-scroll/(0.53*h);
-  var val_icon=1-scroll/(0.2*h);
-  var val_block=0.5-scroll/(0.2*h);
-
-  $('#logo').css('opacity',val);
-  $('.float_zone').css('opacity',val_icon);
-  $('#ab_block').css('opacity',val_block);
-  $('#tm_block').css('opacity',val_block);
-
-  var no=((scroll)/h);
-  no+=0.2;
-  var page=Math.ceil(no);
-  document.getElementById("txt").innerHTML =page+' / 3';
-
-// Fade Out When Opacity is 0- Note to better code through iteration
-
-  var check=$('.float_zone').css('opacity')
-    if(check<=0)
-    {
-      $('.float_zone').fadeOut(0);
-    }
-    else
-    {
-      $('.float_zone').fadeIn(0);
-    }
-  check=$('#logo').css('opacity')
-    if(check<=0)
-    {
-      $('#logo').fadeOut(0);
-    }
-    else
-    {
-      $('#logo').fadeIn(0);
-    }
-  check=$('#ab_block').css('opacity')
-    if(check<=0)
-    {
-      $('#ab_block').fadeOut(0);
-    }
-    else
-    {
-      $('#ab_block').fadeIn(0);
-    }
-  check=$('#tm_block').css('opacity')
-    if(check<=0)
-    {
-      $('#tm_block').fadeOut(0);
-    }
-    else
-    {
-      $('#tm_block').fadeIn(0);
-    }
-
-// Page Number Disappear'
-
-});

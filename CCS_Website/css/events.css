@@ -1,7 +1,7 @@
 /* Page1 */
 
 #ep1{
-  background-color:  #2a3749 ;
+  background-color:  #242f3e ;
 }
 
 #qe2{
@@ -30,7 +30,7 @@
 /* Page2 */
 
 #ep2{
-  background-color: #2a3749 ;
+  background-color: #242f3e ;
 }
 
 #events_con1{
@@ -73,6 +73,13 @@
   }
 }
 
+#chak{
+  background-color:#f6d59b;
+}
+#helix{
+  background-color:#ddd;
+}
+
 @media only screen and (max-width: 400px) {
 
   #events_con1{
@@ -90,10 +97,10 @@
 /* Page3 */
 
 #ep3{
-  background-color:#2a3749;
+  background-color:#242f3e;
 }
 #events_con2{
-  background-color:#2a3749;
+  background-color:#242f3e;
 }
 #ev_fb{
   height:80%;
@@ -129,7 +136,7 @@
 .ev_white_ol {
   width: 0px;
   height: 70px;
-  background-color:white;
+  background-color:#00c29d;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
