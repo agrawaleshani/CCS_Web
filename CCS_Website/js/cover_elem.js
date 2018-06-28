@@ -59,7 +59,7 @@ $(document).scroll(function() {
         input=0;
 
         if(input>2){
-            input=2.8-1.1*input;
+            input=2.8-1.05*input;
         }
             
         $(this).css('opacity',input);

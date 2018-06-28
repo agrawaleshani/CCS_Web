@@ -26,7 +26,7 @@
 
 @media only screen and (max-width: 768px) {
 
-  #tm_header_2{
+  .t2{
     top:1%;
   }
   
@@ -50,7 +50,7 @@
       opacity: 0;
     }
 
-    #tm_header_2{
+    .t2{
       top:3%;
   }
 }
