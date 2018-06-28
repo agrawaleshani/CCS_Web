@@ -15,8 +15,6 @@ $(document).ready(function(){
 
     });
 
-
-
     $('.fb').css({'top':''+($('.about_con2').height() - $('.fb').height())/2+'px','right':''+($('.about_con2').width() - $('.fb').width())/2+'px'});
  
     $('.head').css('right',''+($('.about_con1').width() - $('.head').width())/2+'px');

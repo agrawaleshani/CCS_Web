@@ -163,8 +163,8 @@ transform: scale(1.3);
 }
 
 .hcore{
-  height:150px;
-  width:150px;
+  height:160px;
+  width:160px;
 }
 
 .rcore{
@@ -183,6 +183,18 @@ transform: scale(1.3);
   font-size: 15px;
 }
 
+@media only screen and (max-width: 1500px) {
+
+  .rcore{
+    margin-top:10%;
+  }
+
+  .hcore{
+    height:130px;
+    width:130px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
 
   .hcore{
@@ -196,7 +208,7 @@ transform: scale(1.3);
     text-align: center;
   }
   .rcore{
-    top:15%;
+    margin-top:20%;
   }
   .fig_core{
     margin-top:10%;

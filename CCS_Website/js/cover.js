@@ -82,7 +82,7 @@ $(document).ready(function() {
       },1300);
       
       /* Page No Background */
-      setTimeout(function(){ $('#page_no').css('background-color','#2a3749'); }, 1000);
+      setTimeout(function(){ $('#page_no').css('background-color','#242f3e'); }, 1000);
 
       /* Active Button */
       $('.btn').removeClass('nav_active');
@@ -150,7 +150,7 @@ $(document).ready(function() {
       },1300);
 
       /* Page No Background */
-      setTimeout(function(){ $('#page_no').css('background-color','#485f80'); }, 1000);
+      setTimeout(function(){ $('#page_no').css('background-color','#303f54'); }, 1000);
 
       /* Active Button */
       $('.btn').removeClass('nav_active');
