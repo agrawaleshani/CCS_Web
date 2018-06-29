@@ -33,6 +33,16 @@
     left:30%;
   }
 }
+
+@media only screen and (max-height: 600px) {
+
+    #logo{
+        max-width: 15%;
+        top:33%;
+        left:43%;
+      }
+  
+  }
 @media only screen and (max-width: 500px) {
 
     #logo{
@@ -237,7 +247,7 @@ background-color: white;
 
     #logo_icon{
         display: block;
-        background-image: url(../img/icons/back.png);
+        background-image: url(../img/icons/loco_icon_s.png);
     }
 }
 
