@@ -3,6 +3,8 @@ var token_2=0;
 var token_3=1;
 
 $(document).ready(function() {
+
+  $('#up_page').fadeOut(10);
   
 
   var i=0;
@@ -16,7 +18,7 @@ $(document).ready(function() {
      
       token_3=1;
       token_2=0;
-      token_2=0;
+      token_1=0;
 
       /* Quotes */
 
@@ -194,44 +196,57 @@ $(document).ready(function() {
     /* Animation for on-click scrolling */
 
     var y=$('.content').offset().top;
+    var y2=$('#evt_header').offset().top;
+    y2=y2-30;
     scrollv=$(this).scrollTop()
 
       $('.slide').click(function(e){
       e.preventDefault();
-      $('html,body').stop(true, false).animate({scrollTop:y},800);
+        if(token_1==1){
+        $('html,body').stop(true, false).animate({scrollTop:y2},800);
+        }
+        if(token_1==0){
+          $('html,body').stop(true, false).animate({scrollTop:y},800);
+         }
       });
+
+    /* Up icon click */
+
+    $('#up_page').click(function(e){
+      e.preventDefault();
+      $('html,body').stop(true, false).animate({scrollTop:0},1000);
+    });
+
     
     /* Logo Click Slide Up */
 
     $('#ccs_logo').click(function(e){
       
-        e.preventDefault();
-        $('html,body').stop(true, false).animate({scrollTop:0},1000);
-
 
       if(token_3==0)
       {
+
+        token_3=1;
+        token_2=0;
+        token_2=0;
+
+        setTimeout(function(){ $('#page_no').css('background-color','#000'); }, 1000);
+
         setTimeout(function(){
 
-        /* Active Button */
         $('.btn').removeClass('nav_active');
         $('#b_1').addClass('nav_active');
 
-        /* Scroll Bar Handler */
 
         $('html').css('overflow','hidden');
         setTimeout(function(){ $('html').css('overflow-y','visible'); }, 1000);
-                
-        /* Position Section */
-                
+
           if (window.matchMedia('(min-width: 768px)').matches)
           {
             $('.about').css('left','0');
             $('.events').css('left','100%');
             $('.team').css('left','200%');
           }
-
-        /* Position Section for Windows query */
             
           if (window.matchMedia('(max-width: 768px)').matches)
           {
@@ -240,12 +255,10 @@ $(document).ready(function() {
             $('.team').css('left','-200%');
           }
 
-        },1000);
+        },0);
       } 
     });
-
 });
-
 
 
 $(document).mousemove(function(e) {

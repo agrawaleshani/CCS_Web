@@ -63,6 +63,18 @@ $(document).scroll(function() {
   var page=Math.ceil(no);
   document.getElementById("txt").innerHTML =page+' / 3';
 
+// Up Button Appear
+
+if(scroller<h/2)
+{
+$('#up_page').fadeOut(500);
+}
+if(scroller>h/2)
+{
+$('#up_page').fadeIn(500);
+}
+
+
 // Fade Out When Opacity is 0- Note to better code through iteration
 
   var check=$('.float_zone').css('opacity')

@@ -71,40 +71,26 @@
     opacity: 1;
   }
 
-  @media only screen and (max-width: 1500px) {
 
-    .intro{
-      width:80%;
-      font-size: 25px;
-    }
-    .intro_text{
-      margin-bottom:60px;
-    }
-    .head{
-
-      font-size:65px;
-    }
-  
-  }
-
-  @media only screen and (max-height: 700px) {
+  @media only screen and (max-width: 1400px) {
 
     .intro{
       top: 29%;
-      width:80%;
+      width:65%;
       font-size: 25px;
     }
     .intro_text{
-      margin-bottom:40px;
+      margin-bottom:50px;
     }
     .head{
       top:7%;
+      height:9.5%;
       font-size:65px;
     }
   
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 800px) {
 
     .intro{
     top: 24%;
