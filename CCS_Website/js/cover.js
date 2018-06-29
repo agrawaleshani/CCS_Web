@@ -1,5 +1,6 @@
 var token_1=0;
 var token_2=0;
+var token_3=1;
 
 $(document).ready(function() {
   
@@ -12,6 +13,10 @@ $(document).ready(function() {
     $('#b_1').addClass('nav_active');
 
     $('#b_1').click(function(){
+     
+      token_3=1;
+      token_2=0;
+      token_2=0;
 
       /* Quotes */
 
@@ -52,6 +57,7 @@ $(document).ready(function() {
 
     $('#b_2').click(function(){
       
+      token_3=0;
       token_1=1;
       token_2=0;
 
@@ -118,7 +124,8 @@ $(document).ready(function() {
     });
 
     $('#b_3').click(function(){
-
+    
+    token_3=0;
     token_1=0;
     token_2=1;
 
@@ -198,11 +205,43 @@ $(document).ready(function() {
 
     $('#ccs_logo').click(function(e){
       
-      if(scrollv>y/2)
-      {
         e.preventDefault();
         $('html,body').stop(true, false).animate({scrollTop:0},1000);
-      }
+
+
+      if(token_3==0)
+      {
+        setTimeout(function(){
+
+        /* Active Button */
+        $('.btn').removeClass('nav_active');
+        $('#b_1').addClass('nav_active');
+
+        /* Scroll Bar Handler */
+
+        $('html').css('overflow','hidden');
+        setTimeout(function(){ $('html').css('overflow-y','visible'); }, 1000);
+                
+        /* Position Section */
+                
+          if (window.matchMedia('(min-width: 768px)').matches)
+          {
+            $('.about').css('left','0');
+            $('.events').css('left','100%');
+            $('.team').css('left','200%');
+          }
+
+        /* Position Section for Windows query */
+            
+          if (window.matchMedia('(max-width: 768px)').matches)
+          {
+            $('.about').css('left','0');
+            $('.events').css('left','-100%');
+            $('.team').css('left','-200%');
+          }
+
+        },1000);
+      } 
     });
 
 });

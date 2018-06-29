@@ -6,17 +6,34 @@ $(document).scroll(function() {
   
     if(scrollv>condition)
     {
-      $('figure').each(function(i) {
+      $('.sfig').each(function(i) {
   
         setTimeout(function(){
-          $('figure').eq(i).addClass('showing');
+          $('.sfig').eq(i).addClass('showing');
           },150*(i+1));
       });
     }
   
     if(scrollv<condition)
     {
-      $('figure').removeClass('showing');
+      $('.sfig').removeClass('showing');
+    }
+
+    var condition2=$('#tp3').offset().top-h;
+  
+    if(scrollv>condition2)
+    {
+      $('.fig_core').each(function(i) {
+  
+        setTimeout(function(){
+          $('.fig_core').eq(i).addClass('showing');
+          },150*(i+1));
+      });
+    }
+  
+    if(scrollv<condition2)
+    {
+      $('.fig_core').removeClass('showing');
     }
   
   });
