@@ -22,10 +22,10 @@
 }
 
 #fi {
-  font-size: 25px;
+  font-size: 30px;
   color: #4bf7d3;
   padding: 3px 2px;
-  margin: 2px 3px;
+  margin: 2px 5px;
   transition: all 0.3s ease;
 }
 
