@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 
     $('html').css('overflow','hidden');
@@ -9,3 +10,4 @@ $(document).ready(function(){
 
 
 })
+*/
