@@ -7,6 +7,5 @@ $(document).ready(function(){
         $('html').css('overflow-y','visible');
     },1000);
 
-   
 
 })
