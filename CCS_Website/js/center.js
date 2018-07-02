@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $('.title').each(function() {
 
-        $(this).css('right',''+($('.page').width() - $(this).width())/2+'px');
+        $(this).css('left',''+($(window).width() - $(this).width())/2+'px');
 
     });
 
@@ -30,7 +30,7 @@ $(window).resize(function(){
 
     $('.title').each(function() {
 
-        $(this).css('right',''+($(window).width() - $(this).width())/2+'px');
+        $(this).css('left',''+($(window).width() - $(this).width())/2+'px');
             
     });
 
