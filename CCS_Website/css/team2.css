@@ -88,6 +88,10 @@
 
 @media only screen and (max-width: 1400px) {
 
+    .rs1{
+        margin-top: 20px;
+    }
+
     .m_fig{
          height:220px;
          width: 155px;
@@ -123,7 +127,7 @@
   
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 980px) {
 
     .m_fig{
          height:150px;
