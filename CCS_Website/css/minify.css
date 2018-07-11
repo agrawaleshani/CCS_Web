@@ -1246,12 +1246,12 @@ background-color: white;
   /* Page2 */
   
   #tp2{
-    background-color:#242f3e
+    background-color:#292f38;
   }
   
   
   #team_con1{
-    background-color:#242f3e;
+    background-color:#292f38;
     width: 100%;
   }
   
@@ -1467,11 +1467,11 @@ background-color: white;
     position: absolute;
     top:10px;
     overflow:hidden;
-    height: 150px;
+    height: 230px;
     width: 160px;
-    border-radius: 50%;
+    border-radius: 0%;
     transition: all 0.5s ease-in-out;
-    filter:grayscale(0.4);
+    filter:grayscale(0);
 }
 
 .txt_sec{
@@ -1483,7 +1483,7 @@ background-color: white;
     height:28%;
     opacity: 0.6;
     background-color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     transition: all 0.6s ease-in;
 }
@@ -1522,7 +1522,7 @@ background-color: white;
      
      .view{
          top:10px;
-         height: 135px;
+         height: 200px;
          width: 135px;
      }
      
@@ -1563,7 +1563,7 @@ background-color: white;
          width: 110px;
          border-radius: 0;
      }
-     
+
      .txt_sec{
          width:110px;
          bottom:10px;
@@ -1576,6 +1576,22 @@ background-color: white;
          height: 130px;
          width: 110px;
      }
+
+    #t1{
+      order:1;
+    }
+    #t2{
+      order:3;
+    }
+    #t3{
+      order:2;
+    }
+    #t4{
+      order:4;
+    }
+    #t5{
+      order:5;
+    }
   
   }
 
@@ -1624,7 +1640,22 @@ background-color: white;
          height: 120px;
          width: 80px;
      }
-  
+
+    #t1{
+      order:1;
+    }
+    #t2{
+      order:3;
+    }
+    #t3{
+      order:2;
+    }
+    #t4{
+      order:4;
+    }
+    #t5{
+      order:5;
+    }
   }
   .title{
     position:absolute;
